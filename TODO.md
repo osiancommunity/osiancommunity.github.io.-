@@ -1,0 +1,5 @@
+- [ ] Enhance mobile CSS alignment in style-dashboard.css (improve sidebar, modal, contact, payment responsiveness)
+- [ ] Enhance mobile CSS alignment in style-quiz.css
+- [ ] Add back buttons to dashboard-user.html, quiz.html, and other relevant pages
+- [ ] Improve error display in script-dashboard.js, script-quiz.js, and other JS files (replace pop-ups with inline messages or better modals)
+- [ ] Test mobile view and functionality using browser_action

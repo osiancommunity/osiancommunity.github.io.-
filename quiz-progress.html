@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIAN - My Quiz Progress</title>
+    <link rel="stylesheet" href="style-dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="dashboard-user.html" class="logo">OSIAN</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard-user.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a></li>
+                <li class="active"><a href="quiz-progress.html"><i class='bx bx-file-blank'></i><span>My Quizzes</span></a></li>
+              <li><a href="mentorship-user.html"><i class='bx bx-video'></i><span>Mentorship</span></a></li>
+                 <li><a href="notifications.html"><i class='bx bx-bell'></i><span>Notifications</span></a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="login.html" class="logout-btn">
+                    <i class='bx bx-log-out'></i><span>Log Out</span>
+                </a>
+                <div class="support-chat">
+                    <i class='bx bx-support'></i>
+                    <div>
+                        <strong>Support 24/7</strong>
+                        <p>Need help? Super Chat</p>
+                    </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="main-header">
+                <div class="header-title">
+                    <h1>My Quiz Progress</h1>
+                    <p>Track your scores, attempts, and performance over time.</p>
+                </div>
+                <div class="header-profile">
+                    <input type="text" placeholder="Search my quizzes...">
+                    <i class='bx bx-search'></i>
+                    <img src="https://via.placeholder.com/40" alt="Profile Picture">
+                </div>
+            </header>
+
+            <section class="kpi-grid-user">
+                <div class="kpi-card-user">
+                    <i class='bx bx-file-blank'></i>
+                    <div class="card-info">
+                        <h2>14</h2>
+                        <p>Quizzes Attempted</p>
+                    </div>
+                </div>
+                <div class="kpi-card-user">
+                    <i class='bx bx-check-double'></i>
+                    <div class="card-info">
+                        <h2>9</h2>
+                        <p>Quizzes Passed</p>
+                    </div>
+                </div>
+                <div class="kpi-card-user">
+                    <i class='bx bxs-bar-chart-alt-2'></i>
+                    <div class="card-info">
+                        <h2>82%</h2>
+                        <p>Average Score</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Registered Quizzes Section -->
+            <section class="content-card full-width-table">
+                <h3>My Registered Quizzes</h3>
+                <div class="quiz-grid" id="registered-quizzes">
+                    <!-- Registered quizzes will be loaded here -->
+                </div>
+            </section>
+
+            <!-- Quiz History Section -->
+            <section class="content-card full-width-table">
+                <h3>My Quiz History</h3>
+                <table class="quiz-history-table">
+                    <thead>
+                        <tr>
+                            <th>Quiz Title</th>
+                            <th>Category</th>
+                            <th>Type</th>
+                            <th>Date Attempted</th>
+                            <th>Score</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="quiz-history-body">
+                        <!-- Quiz history will be loaded here -->
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+   <script src="script-quiz-progress.js"></script>
+</body>
+</html>
